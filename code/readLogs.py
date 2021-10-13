@@ -1,9 +1,26 @@
 import os
 import json
+import time
+
 from sammaParser import logger
 
 file = os.getenv('FILE', 'tsunami-output.json')
+parser = os.getenv('PARSER', 'tsunami')
 
+
+import os.path
+
+#Wait to file is there
+FileIsNotThere = True
+while FileIsNotThere:
+    if os.path.isfile("/out/{0}".format(file)):
+        print ("File is found /out/{0}".format(file))
+        #give time so file is complete
+        time.sleep(5)
+        FileIsNotThere = False
+    else:
+        print ("Wait for file /out/{0}".format(file))
+        time.sleep(5)
 
 #Json file Tsunami
 #Read the file and send line by line to the samma parser

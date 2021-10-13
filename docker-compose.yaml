@@ -5,3 +5,4 @@ services:
     image: sammascanner/logger:0.1
     volumes:
       - ./:/scanner
+      - ./out/:/out
