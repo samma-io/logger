@@ -1,7 +1,7 @@
 import os
 import json
 
-WRITE_TO_FILE = os.getenv('WRITE_TO_FILE', 'False')
+WRITE_TO_FILE = os.getenv('WRITE_TO_FILE', 'True')
 PARSER = os.getenv('PARSER', 'logger')
 
 
