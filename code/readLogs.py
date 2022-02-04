@@ -16,11 +16,11 @@ while FileIsNotThere:
     if os.path.isfile("/out/{0}".format(file)):
         print ("File is found /out/{0}".format(file))
         #give time so file is complete
-        time.sleep(5)
+        time.sleep(10)
         FileIsNotThere = False
     else:
         print ("Wait for file /out/{0}".format(file))
-        time.sleep(5)
+        time.sleep(10)
 
 #Json file Tsunami
 #Read the file and send line by line to the samma parser

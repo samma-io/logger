@@ -8,6 +8,7 @@ PARSER = os.getenv('PARSER', 'logger')
 
 #if we want to write to file lets set it up
 if WRITE_TO_FILE != "False":
+    print("Writing to file ")
     f = open("/out/{}.json".format(PARSER), "a")
 
 
